@@ -146,6 +146,23 @@ h2 {
     margin-right: 30px;
 }
 
+input:invalid {
+    border-color: red;
+}
+
+input + div {
+    display: none;
+}
+
+input:invalid + div {
+    display: block;
+    color: red;
+}
+
+input:invalid::after {
+    content: "<div>*Invalid password.</div>"
+}
+
 #submission {
     height: 35vh;
 }

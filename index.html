@@ -53,11 +53,13 @@
                     <div class="input-row">
                         <div class="input-set">
                             <label for="pass">PASSWORD</label>
-                            <input id="pass" type="password" name="password" />
+                            <input id="pass" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+                            <div class="warning">*Invalid password.</div>
                         </div>
                         <div class="input-set">
                             <label for="pass-confirm">CONFIRM PASSWORD</label>
-                            <input id="pass-confirm" type="password" name="pass-confirm" />
+                            <input id="pass-confirm" type="password" name="pass-confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+                            <div class="warning">*Invalid password.</div>
                         </div>
                     </div>
                 </form>
