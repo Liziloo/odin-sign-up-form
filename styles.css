@@ -8,12 +8,34 @@
 }
 
 @font-face {
-    font-family: 'momstypewriterregular';
-    src: url('fonts/momot___-webfont.woff2') format('woff2'),
-         url('fonts/momot___-webfont.woff') format('woff');
+    font-family: 'afta_sansitalic';
+    src: url('fonts/aftasansthin-italic-webfont.woff2') format('woff2'),
+         url('fonts/aftasansthin-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
+
+@font-face {
+    font-family: 'afta_sansregular';
+    src: url('fonts/aftasansthin-regular-webfont.woff2') format('woff2'),
+         url('fonts/aftasansthin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Standardize input-control size */
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 
 #container {
     display: flex;
@@ -23,17 +45,18 @@
 
 #sidebar {
     display: flex;
+    flex: 1 auto;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    width: 32vw;
+    width: 35vw;
     background-image: url("kris-atomic.jpg");
 }
 
 #logo-banner {
     display: flex;
     height: 20vh;
-    background-color: rgb(0 0 0 / 0.3);
+    background-color: rgb(0 0 0 / 0.4);
     margin-top: 20vh;
     align-items: center;
     padding: 5px;
@@ -41,11 +64,15 @@
 }
 
 #logo {
-    height: 17vh;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 #santa {
-    height: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 
 #brand {
@@ -55,7 +82,58 @@
     padding: 15px;
 }
 
+#credit-footer {
+    text-align: center;
+}
+
 #main {
     display: flex;
+    width: 65vw;
+    flex: 1 auto;
     flex-direction: column;
+    justify-content: center;
+    font-family: 'afta_sansregular', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#disclaimer, #form, #submission {
+    padding: 0 45px;
+}
+
+#disclaimer, #submission {
+    background-color: rgb(245, 244, 244);
+}
+
+#disclaimer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+#form {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.input-row {
+    display: flex;
+}
+
+.input-set {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+#submission {
+    height: 30vh;
 }
