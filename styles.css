@@ -164,8 +164,8 @@ input:invalid + div {
     color: red;
 }
 
-input:invalid::after {
-    content: "<div>*Invalid password.</div>"
+input:focus {
+    border: 1px solid blue;
 }
 
 #submission {
