@@ -87,6 +87,8 @@ input {
     color: white;
     font-family: 'journalregular';
     font-size: 4.5rem;
+    padding: 5px;
+    line-height: 4rem;
 }
 
 #credit-footer {
@@ -168,4 +170,21 @@ input:invalid::after {
 
 #submission {
     height: 35vh;
+}
+
+button {
+    background-color: #b3180b !important;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    height: 35px;
+    margin: 20px 0;
+}
+
+#existing-account {
+    font-size: .9rem;
+}
+
+a {
+    color: #b3180b;
 }
